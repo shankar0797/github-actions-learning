@@ -2,6 +2,9 @@ name: Hello world
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   demo-app:
@@ -9,3 +12,7 @@ jobs:
     steps:
       - name: "hello world"
         run: echo "hello world"
+      - name: "Display date"
+        run: date
+      - name: "Display uname"
+        run: uname
