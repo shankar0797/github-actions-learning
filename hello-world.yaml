@@ -1,12 +1,11 @@
-Name: Hello world
+name: Hello world
 
 on:
   workflow_dispatch:
-Job:
+
+jobs:
   demo-app:
-
-  runs-on: ubuntu-latest
-
-  steps:
-  -name: "Hello world prgram"
-   run: echo"hello world"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Hello world program"
+        run: echo "hello world"
