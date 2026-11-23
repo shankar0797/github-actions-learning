@@ -1,5 +1,7 @@
 Name: Hello world
 
+on:
+  workflow_dispatch:
 Job:
   demo-app:
 
