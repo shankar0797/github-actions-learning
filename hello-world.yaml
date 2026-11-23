@@ -1,0 +1,10 @@
+Name: Hello world
+
+Job:
+  demo-app:
+
+  runs-on: ubuntu-latest
+
+  steps:
+  -name: "Hello world prgram"
+   run: echo"hello world"
