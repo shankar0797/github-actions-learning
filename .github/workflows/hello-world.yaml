@@ -1,18 +1,24 @@
-name: Hello world
+
+name: My First GitHub Actions Workflow
 
 on:
-  workflow_dispatch:
   push:
     branches:
       - main
 
 jobs:
-  demo-app:
+  first-job:
+    name: Hello World Job
     runs-on: ubuntu-latest
+
     steps:
-      - name: "hello world"
-        run: echo "hello world"
-      - name: "Display date"
+      - name: Print welcome message
+        run: echo "Hello! GitHub Actions is working."
+
+      - name: Display current date
         run: date
-      - name: "Display uname"
-        run: uname
+
+      - name: Display runner information
+        run: |
+          echo "Operating System:"
+          uname -a
