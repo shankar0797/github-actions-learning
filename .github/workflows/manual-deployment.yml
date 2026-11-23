@@ -1,0 +1,13 @@
+
+name: Manual Deployment
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deployment message
+        run: echo "Manual deployment started"
